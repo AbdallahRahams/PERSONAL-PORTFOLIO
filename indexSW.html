@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HomePage</title>
+    <link rel="stylesheet" href="styleS.css">
+    <script src="https://kit.fontawesome.com/dc2c76461e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="section1">
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <div id="buttonContainer">
+                <button onclick="window.location='index.html'" id="langswitch1"> English </i></button>
+              </div>
+
+            <ul id="sidemenu">
+                <li><a href="#home" onclick="closemenu()">Nyumbani</a></li>
+                <li><a href="#about" onclick="closemenu()">Kuhusu</a></li>
+                <li><a href="#services" onclick="closemenu()">Huduma</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Portfolia</a></li>
+                <li><a href="#contact" onclick="closemenu()">Mawasiliano</a></li>
+                <li><a href="FAQSW.html" onclick="closemenu()">Maswali</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div id="header-container" >
+            <div class="header-text">
+                <h1 id="ht">Habari, Mimi ni <span>Abdallah Razaki Hamisi </span> <br> Kutoka Arusha, Tanzania</h1>
+                <br><p>Mtaalam wa Mifumo ya Usalama</p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    <!-- Kuhusu -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/PortfolioBackgroundfotor.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="exp">Kuhusu Mimi</h1>
+                    <section class="experience">
+                        <p>
+                            <span id="introduction">
+                                Zaidi ya mwaka mmoja wa uzoefu katika Secure 7 Systems Arusha (Mafunzo ya vitendo), 
+                                nina ujuzi wa kufunga, kutatua matatizo, 
+                                na kuongeza ufanisi wa mifumo ya usalama kwa biashara za aina zote. 
+                                Shauku yangu iko katika kuingiza suluhisho za kisasa kama CCTV, 
+                                Mfumo wa Kuhudhuria Wakati wa Kibaiolojia, kudhibiti upatikanaji, na video intercoms.
+                            </span>
+                        </p>
+                    </section>
+                    
+                    <section class="qualities">
+                        <h2 id="heading2">Ujuzi wa Kiufundi:</h2>
+                        <ul>
+                            <li>Adaptable kwa teknolojia mpya na majukwaa ya IT.</li>
+                            <li>Ujuzi imara wa mitandao ya kompyuta kwa ushirikiano laini.</li>
+                            <li>Certified katika ufungaji na matengenezo ya mifumo mbalimbali ya usalama.</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="qualities">
+                        <h2 id="heading2">Fokus la Kutatua Matatizo:</h2>
+                        <ul>
+                            <li>Kutatua kwa haraka na kurekebisha shida za mfumo wa usalama.</li>
+                            <li>Njia ya proaktiva kwa optimization ya mfumo na utendaji.</li>
+                            <li>Imedhamiriwa kuhakikisha usalama wa maksimumu na amani ya mteja.</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="contact-1">
+                        <h3>Tuangalie biashara yako pamoja. Wasiliana nami kwa mazungumzo.</h3>
+                    </section>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Ujuzi</p>
+                        <p class="tab-links" onclick="opentab('experience')">Uzoefu</p>
+                        <p class="tab-links" onclick="opentab('education')">Elimu</p>
+                    </div >
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li id="abtlist"><span ><h2>Kiufundi</h2></span><br><ul>
+                                <li id="abtlist-tech">Ufungaji na usanidi wa mifumo ya usalama (CCTV, kuhudhuria wakati, kudhibiti upatikanaji, video intercoms)</li>
+                                <li id="abtlist-tech">Mitandao ya kompyuta na ujuzi wa IT</li>
+                                <li id="abtlist-tech">Kutatua na kutatua matatizo</li>
+                                <li id="abtlist-tech">Uoptimize na kuboresha utendaji wa mfumo</li>
+                                <li id="abtlist-tech">Kufahamiana na bidhaa na mifano mbalimbali ya mifumo ya usalama</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li id="abtlist"><span><h2>Secure 7 Systems Arusha </h2></span><br><ul>
+                                <li id="abtlist-tech">Mfundi wa Mifumo ya Usalama</li>
+                                <li id="abtlist-tech">Alifunga na kudumisha mifumo ya usalama kwa biashara za aina zote</li>
+                                <li id="abtlist-tech">Alitoa majibu na kusuluhisha maswali na shida
+                                    <li id="abtlist-tech">Alitoa msaada wa kiufundi na mafunzo kwa wateja</li>
+                                    <li id="abtlist-tech">Alichangia katika miradi ya optimization ya mfumo</li>
+                                </ul></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li id="abtlist"><span><h2>Chuo Kikuu cha Dar Es Salaam Mwanafunzi</h2></span><br><ul>
+                                    <li id="abtlist-tech">Ninasomea B.Sc. katika Sayansi ya Kompyuta katika Chuo Kikuu cha Dar Es Salaam</li>
+                                </ul></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3">
+    
+        <!-- Huduma -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Huduma Zangu</h1>
+                <div class="services-list">
+                    <div>
+                        <h2 id="#services-heading">Ufungaji wa Mifumo ya Usalama</h2>
+                        <p id="shdesc">
+                            Ufungaji wa Kamera za CCTV, Ufungaji wa Mifumo ya Kuhudhuria Wakati ya Kibaiolojia, 
+                            Ufungaji wa Mifumo ya Kudhibiti Upatikanaji, na Ufungaji wa Video Intercom/Video Door Phone
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h2 id="#services-heading">Kutatua na Kupimia</h2>
+                        <p id="shdesc">Uchambuzi wa Uchunguzi, Uoptimize wa Utendaji na Ushirikishwaji wa Mfumo</p>
+                    </div>
+    
+                    <div>
+                        <h2 id="#services-heading">IT Support, Mashauriano, na Kubinafsisha</h2>
+                        <p id="shdesc">
+                            Msaada wa IT wa juu, Ushirikiano wa Miundombinu, Kubadilika kwa Teknolojia, 
+                            Tathmini za Usalama, Huduma za Kubinafsisha, na Mipango ya Mkakati
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Kazi Zangu -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Kazi Zangu</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/cctv.png" alt="kazi1">
+                        <div class="layer">
+                            <h3>Uwekaji wa CCTV kwa Campus Salama:</h3>
+                            <p><span>Lengo:</span> Kutumia mifumo ya CCTV mwisho hadi mwisho kwa taasisi kubwa ya elimu. <br><br>
+                               <span>Mafanikio:</span> Kushinda changamoto za ushirikiano wa miundombinu kwa kupeleka bila shida. <br><br>
+                               <span>Matokeo:</span> Kuimarisha usalama wa kambi na chanjo kamili.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Access-Control.jpg" alt="kazi2">
+                        <div class="layer">
+                            <h3>Uimarishaji wa Kudhibiti Upatikanaji na Mifumo ya Kuhudhuria Wakati ya Kibaiolojia:</h3>
+                            <p>
+                                <span>Lengo:</span>
+                                Kuimarisha usalama kwa ujumla kupitia uingizaji wa mifumo ya kudhibiti upatikanaji, 
+                                Kuhudhuria wakati wa kibaiolojia iliyooptimizwa kwa usimamizi bora wa wafanyakazi. <br><br>
+                                
+                                <span>Matokeo:</span>
+                                Kukaza hatua za usalama na kuongeza ufanisi katika ufuatiliaji wa wakati wa wafanyakazi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Video-Intercom.jpg" alt="kazi3">
+                        <div class="layer">
+                            <h3>Uboreshaji wa Mfumo wa Video Intercom/Door Phone</h3>
+                            <p><span>Lengo:</span> Kupanua mfumo wa video intercom/door phone kwa mradi wa makazi. <br><br>
+                             <span>Mafanikio:</span> Kuunganisha vipengele vya juu vinavyofaa mahitaji ya mteja. <br><br>
+                             <span>Matokeo:</span> Kutoa ufikiaji wa salama na rahisi na maoni chanya kutoka kwa watumiaji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mawasiliano -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Wasiliana Nami</h1>
+                        <p><i class="fa-solid fa-envelope" ></i>abdallahrahams@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+255 612 834 684</p>
+                        <p><i class="fa-solid fa-phone"></i>+255 676 849 705</p>
+    
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/abdallah-hamisi-a285b1222" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/+255743039158" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://twitter.com/Abdallah141002" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="contact-right">
+                        <form action="" name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Jina Lako" required>
+                            <input type="email" name="Email" placeholder="Barua Pepe Yako" required>
+                            <textarea name="Message" id="txt" rows="10" placeholder="Ujumbe Wako"></textarea>
+                            <div style="font-weight: 700;" id="msg"></div>
+                            <button type="submit" class="btn">Tuma</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="cert">
+                <a href="certficates.html">CV Yangu</a>
+            </div>
+            
+        </div>
+    
+        <div class="copyright">
+            <p><span >© 2024 Abdallah R. Hamisi.</span> Haki Zote Zimehifadhiwa.</p>
+        </div>
+
+        </div>
+    
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+    
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+    
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+    
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+    
+            var sidemenu = document.getElementById("sidemenu");
+    
+            function openmenu(){
+                sidemenu.style.right = 0;
+            }
+    
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+    
+        </script>
+    
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz3v1bJeT41nqg2lVQEfO1x7KZ_1Y9gQmc46zLMksCGgLTrmW6lG1z0PyGUwPDrt6k/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const message = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML = "Ujumbe Umepokelewa"
+                    setTimeout(function(){
+                        message.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => {
+                    message.innerHTML = "Ujumbe haukutumwa kwa sababu ya Hitilafu fulani. Tafadhali jaribu tena"
+                    setTimeout(function(){
+                        message.innerHTML = ""
+                    }, 3000)
+                })
+            })
+        </script>
+
+<script>
+    function toggleLanguage() {
+        // Get the current language from the URL
+        const currentLanguage = window.location.pathname.includes("sw") ? "sw" : "en";
+
+        // Determine the target language and update the URL
+        const targetLanguage = currentLanguage === "en" ? "sw" : "en";
+        const newUrl = window.location.href.replace(`/${currentLanguage}/`, `/${targetLanguage}/`);
+        window.location.href = newUrl;
+    }
+</script>
+    
+    </body>
+    </html>
+    
+    

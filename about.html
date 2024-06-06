@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about_style.css">
+  <title>About page</title>
+
+</head>
+<body>
+  <div class="background">
+    <div class="upper"></div>
+    <div class="lower">
+      <div class="content-card">
+
+            <!---------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+                
+                <section class="experience">
+                    <p>
+                        <span id="introduction">
+                            Over a year of experience at Secure 7 Systems Arusha(Internship), 
+                            I bring expertise in installing, troubleshooting, 
+                            and optimizing security systems for businesses of all sizes. 
+                            My passion lies in integrating cutting-edge solutions like CCTV, 
+                            Biometric time attendance, access control, and video intercoms.
+                        </span>
+                    </p>
+               
+                
+                <section class="contact-1">
+                    <h3 style="color: #07484f; font-size: 20px;">Welcome to a realm of expertise where your security needs are met with precision and professionalism.</h3>
+                </section>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div >
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li id="abtlist"><span><h1>Technical</h1></span><ul>
+                        <li id="abtlist-tech">Installation and configuration of security systems (CCTV, time attendance, access control, video intercoms)</li>
+                        <li id="abtlist-tech">Computer networking and IT skills</li>
+                        <li id="abtlist-tech">Troubleshooting and problem-solving</li>
+                        <li id="abtlist-tech">System optimization and performance enhancement</li>
+                        <li id="abtlist-tech">Familiarity with various security system brands and models</li>
+                    </ul></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li id="abtlist"><span><h1>Secure 7 Systems Arusha </h1></span><ul>
+                       <li id="abtlist-tech">Security Systems Technician</li>
+                       <li id="abtlist-tech">Installed and maintained security systems for businesses of all sizes</li>
+                       <li id="abtlist-tech">Responded to and resolved client inquiries and issues promptly</li>
+                       <li id="abtlist-tech">Provided technical support and training to clients</li>
+                       <li id="abtlist-tech">Contributed to system optimization projects</li>
+                    </ul></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li id="abtlist"><span><h2>University of Dar Es Salaam Student</h2></span><ul>
+                           <li id="abtlist-tech">I'm currently pursuing a B.Sc. in Computer Science at the University of Dar Es Salaam</li>
+                        </ul></li>
+                        </ul>
+                </div>
+
+                <div class="tab-contents" id="more">
+                    <ul>
+                        <li id="abtlist"><span><h2>More</h2></span><ul>
+                           <li id="abtlist-tech">Need to knoow more about me, Share with me through provided  <a href="/index.html/#contact"></a>Contacts</li>
+                        </ul></li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrollable Divs</title>
+    <style>
+        /* Style for the container */
+        .scrollable-container {
+            width: 300px; /* Define the width of the container */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Disable vertical scrolling */
+            border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+            padding: 10px; /* Optional: Add padding */
+            scrollbar-width: none; /* Hide scrollbar for Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        }
+
+        /* Hide scrollbar for WebKit browsers */
+        .scrollable-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Style for the items inside the container */
+        .scrollable-item {
+            display: inline-block; /* Display items in a line */
+            width: 100px; /* Define width of each item */
+            height: 100px; /* Define height of each item */
+            background-color: #f0f0f0; /* Optional: Add background color */
+            margin-right: 10px; /* Optional: Add margin between items */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-container">
+        <!-- Items inside the scrollable container -->
+        <div class="scrollable-item">Item 1</div>
+        <div class="scrollable-item">Item 2</div>
+        <div class="scrollable-item">Item 3</div>
+        <div class="scrollable-item">Item 4</div>
+        <div class="scrollable-item">Item 5</div>
+        <div class="scrollable-item">Item 6</div>
+        <!-- Add more items as needed -->
+    </div>
+</body>
+</html>

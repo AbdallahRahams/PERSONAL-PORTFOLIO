@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.partition {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.partition-heading{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#section1 {
+    font-family: 'Electrolize', sans-serif;
+    background: -webkit-linear-gradient(-45deg, rgba(7, 3, 3, 1) 20%, rgba(7, 68, 75,1) 70%, rgb(87, 83, 83) 10%);
+}
+
+@media (min-width: 768px) {
+    .partition {
+        width: 48%;
+    }
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    width: 90%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+}
+
+.faq-item {
+    padding: 20px 0;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+#headingFL{
+    color: #07484f;
+    font-size: 40px;
+}
+
+.question:hover {
+    color: #009688;
+    border-bottom: 2px solid #009688;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+.partition-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(7, 68, 75);
+    transition-duration: 0.2s;
+}
+
+.partition-heading:hover{
+    font-size: 30px;
+}
+
+
+
+
+
+/*
+Responsiveness
+*/
+
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .partition {
+        width: 48%; /* Occupy nearly half width on medium screens */
+    }
+
+    #tech{
+        height: 100%;
+    }
+
+    .card:hover {
+        width: 100%;
+        margin: 25px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .partition {
+        width: 85%; /* Occupy full width on smaller screens */
+       margin-left: 2px;
+    }
+
+    .card {
+        width: 100%; /* Occupy full width */
+    }
+
+    .partition-heading {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .question {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .answer {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+
+    .question{
+
+        font-size: 20px;
+    }
+    .answer{
+
+        font-size: 18px;
+    }
+}
+
+

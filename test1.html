@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <label class="switch3" >
+    <input type="checkbox" />
+    <div></div>
+  </label>
+  
+  <label class="switch3 switch3-checked" >
+    <input type="checkbox" checked />
+    <div></div>
+  </label>
+
+
+  <script>
+    $('.switch3 input').on('change', function(){
+  var dad = $(this).parent();
+  if($(this).is(':checked'))
+    dad.addClass('switch3-checked');
+  else
+    dad.removeClass('switch3-checked');
+});
+  </script>
+</body>
+</html>
+
+

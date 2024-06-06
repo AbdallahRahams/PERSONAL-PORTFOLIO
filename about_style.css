@@ -1,0 +1,190 @@
+/*---------about----------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.upper {
+    background-image: linear-gradient(to right, #07484f 80%, #d0730a 20%); /* First color */
+    width: 100%;
+    height: 80%;
+}
+
+.lower {
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+}
+
+.content-card {
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto; /* Ensure overflow is handled */
+}
+
+#about {
+    padding: 10px 20px; /* Adjusted padding */
+    color: #ababab;
+    position: relative;
+    max-width: 100%; /* Ensure #about doesn't exceed the width of .content-card */
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    font-size: 60px;
+    margin: 0px;
+    color: black;
+}
+
+.exp {
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 0px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #07484f;
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+#abtlist-tech {
+    list-style: square;
+}
+
+#introduction {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 800;
+}
+
+
+
+
+/* Responsive Adjustments */
+
+/* Adjusting content-card width for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .content-card {
+        width: 80%;
+        height: 80%;
+    }
+    .exp {
+        font-size: 60px;
+    }
+    .about-col-2 {
+        font-size: 30px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 14px;
+    }
+
+    #introduction {
+        font-size: 40px;
+    }
+    
+    .tab-links {
+        font-size: 25px;
+    }
+}
+
+/* Adjusting font-size and layout for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    .content-card {
+        width: 80%;
+        height: 80%;
+    }
+
+    .exp {
+        font-size: 40px;
+    }
+
+    .tab-links {
+        font-size: 20px;
+    }
+
+    #introduction {
+        font-size: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 30px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 14px;
+    }
+}
+
+/* Further adjustments for screens smaller than 420px */
+@media screen and (max-width: 420px) {
+    .exp {
+        font-size: 30px;
+    }
+
+    .tab-links {
+        font-size: 18px;
+    }
+
+    #introduction {
+        font-size: 25px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 14px;
+    }
+
+    .about-col-2 {
+        font-size: 20px;
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,254 @@
+
+
+/*--------------for smaller screens--------------*/
+@media only screen and (max-width: 600px){
+    #header{
+       background-image: url(images/phone-background.png);
+    }
+    .header-text{ 
+        margin-top: 20%;
+        font-size: 5px;
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    #section1{
+        display: block;
+        width: 100%;
+    }
+
+    .header-text h1{
+        font-size: 25px;
+    }
+
+    .header-text p{
+        font-size: 15px;
+    }
+
+    nav .fa-solid{
+        display:  block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #07484f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul .fa-solid.fa-bars{
+        position: sticky;
+    }
+    
+    .sub-title{
+        font-size: 30px;
+
+    }
+
+    #section2{
+        display: block;
+        width: 100%;
+    }
+
+    .exp{
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #07484f;
+        margin-top: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .header-text{
+        margin-top: 50%;
+        font-size: 20px;
+        height: 30vh;
+        text-align: center;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-text{
+        margin-top: 50%;
+        font-size: 20px;
+        height: 30vh;
+        text-align: center;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis:85%;
+    }
+
+    .about-col-2{
+        font-size: 18px;
+    }
+
+    .sub-title{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+        .work-list::-webkit-scrollbar {
+            display: none;
+            width: 100%;
+        }
+        
+        .work {
+            display: inline-block; 
+            width: 100%; 
+            height: 500px; 
+            background-color: #f0f0f0;
+            margin-right: 10px;
+        }
+
+    .header-text{
+        margin-top: 70%;
+        font-size: 15px;
+    }
+
+    nav .fa-solid{
+        display:  block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #07484f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul .fa-solid.fa-bars{
+        position: sticky;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        margin: 30px;
+    }
+
+    .about-col-1{
+        margin: 30px;
+    }
+
+    .header-text{
+        margin-top: 50%;
+        font-size: 20px;
+        height: 30vh;
+        text-align: center;
+    }
+
+    .sub-title{
+        font-size: 30px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+    .contact-left{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    
+    .contact-right{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
+
+#header-container{
+
+    margin-bottom: 200px;
+    margin-top: 0 auto;
+
+}
+
+#langswitch1{
+    font-size: 30px;
+    background-color: rgb(92, 89, 89);
+    padding: 20px;
+    border-radius: 70px;
+    font-weight: 700;
+    width: 150px;
+    height: 80px;
+    border-width: 7px;
+    border-color: rgb(5, 5, 5);
+    transition-duration: 0.5s;
+}
+
+#langswitch1:hover{
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 150px;
+    height: 80px;
+    border-width: 7px;
+    border-radius: 70px;
+    font-weight: 700;
+    border-width: 10px;
+}
